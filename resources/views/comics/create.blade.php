@@ -8,7 +8,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-        <form action="{{ route('monitors.store') }}" method="post">
+        <form action="{{ route('comics.store') }}" method="post">
         @csrf
         @method('POST')
         <div class="mb-3">
@@ -21,7 +21,7 @@
         </div>
         <div class="mb-3">
           <label for="price" class="form-label">Price</label>
-          <input type="number" class="form-control" id="price" name="price">
+          <input type="number" step="0.01" class="form-control" id="price" name="price">
         </div>
         <div class="mb-3">
           <label for="genre" class="form-label">Genre</label>
