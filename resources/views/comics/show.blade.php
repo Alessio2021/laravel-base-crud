@@ -5,21 +5,25 @@
 @endsection
 
 @section('content')
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <a href="{{ route('comics.index') }}" class="btn btn-primary">Home</a>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col">
-                 <h1>{{ $keyboard->name }}</h1>
+                 <h1>{{ $comic->title }}</h1>
             </div>
         </div>
         <div class="row">
             <div class="col">
-              <img class="fluid-img" src=" {{$keyboard->photo }}" alt="{{$keyboard->name}}">
+              <img class="fluid-img" src=" {{ $comic->photo }}" alt="{{$comic->title}}">
             </div>
             <div class="col">
-              <div>{{ $keyboard->features }}</div>
-              <div><h2>{{  $keyboard->price }} €</h2></div>
+              <div>{{ $comic->description }}</div>
+              <div><h2>{{  $comic->price }} €</h2></div>
             </div>
         </div>
     </div>
-   
 @endsection

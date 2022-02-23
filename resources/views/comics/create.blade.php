@@ -29,11 +29,11 @@
         </div>
         <div class="mb-3">
           <label for="photo" class="form-label">Photo</label>
-          <input type="number" class="form-control" id="photo" name="photo">
+          <input type="text" class="form-control" id="photo" name="photo">
         </div>
         <div class="mb-3">
           <label for="description" class="form-label">Description</label>
-          <input type="number" class="form-control" id="description" name="description">
+          <input type="text" class="form-control" id="description" name="description">
         </div>
 
         <input class="btn btn-primary" type="submit" value="Send">
