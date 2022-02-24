@@ -22,7 +22,8 @@
             <li class="list-group-item">{{$comics->photo}}</li>
             <li class="list-group-item">{{$comics->description}}</li>
             <li class="list-group-item text-center">
-                <a href="{{ route('comics.show', $comics->id) }}" class="btn btn-primary">view</a>
+                <a href="{{ route('comics.show', $comics->id) }}" class="btn btn-primary">View</a>
+                <a href="{{ route('comics.edit', $comics->id) }}" class="btn btn-primary">Edit</a>
             </li>
         </ul>
         @endforeach
