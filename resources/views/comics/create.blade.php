@@ -14,26 +14,44 @@
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
           <input type="text" class="form-control" id="title" name="title">
+          @error('title')
+            <div class="alert alert-danger">{{ $message }}</div>
+          @enderror
         </div>
         <div class="mb-3">
           <label for="author" class="form-label">Author</label>
           <input type="text" class="form-control" id="author" name="author">
+          @error('author')
+            <div class="alert alert-danger">{{ $message }}</div>
+          @enderror
         </div>
         <div class="mb-3">
           <label for="price" class="form-label">Price</label>
           <input type="number" step="0.01" class="form-control" id="price" name="price">
+          @error('price')
+            <div class="alert alert-danger">{{ $message }}</div>
+          @enderror
         </div>
         <div class="mb-3">
           <label for="genre" class="form-label">Genre</label>
           <input type="text" class="form-control" id="genre" name="genre">
+          @error('genre')
+            <div class="alert alert-danger">{{ $message }}</div>
+          @enderror
         </div>
         <div class="mb-3">
           <label for="photo" class="form-label">Photo</label>
           <input type="text" class="form-control" id="photo" name="photo">
+          @error('photo')
+            <div class="alert alert-danger">{{ $message }}</div>
+          @enderror
         </div>
         <div class="mb-3">
           <label for="description" class="form-label">Description</label>
-          <input type="text" class="form-control" id="description" name="description">
+          <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+          @error('description')
+            <div class="alert alert-danger">{{ $message }}</div>
+          @enderror
         </div>
 
         <input class="btn btn-primary" type="submit" value="Send">
